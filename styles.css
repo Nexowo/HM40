@@ -214,3 +214,9 @@ footer div
     background-size: 100px;
     padding-bottom: 15px;
 }
+
+.deroulant > a::after
+{
+	content: " ▼";
+	font-size: 12 px;
+}
