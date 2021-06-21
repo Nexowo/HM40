@@ -52,6 +52,7 @@ p
 	width: 1080;
 	margin: 0 auto;
 	padding: 0 10px;
+	overflow: hidden;
 }
 
 .clear
@@ -222,9 +223,10 @@ footer div
 	display: flex;
 	flex-direction: column;
 	text-align: left;
-	width: 100%;
+	width: 15%;
 	margin-bottom: 250px;
 	margin-top: 50px;
+	float:left;
 }
 
 #id_page h3
@@ -263,4 +265,12 @@ footer div
 }
 .dropdown:hover .dropdown-child {
     display: block;
+}
+
+#principal
+{
+	display: inline-block;
+	text-align: left;
+	width: 85%;
+	float:left;
 }
