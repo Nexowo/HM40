@@ -179,7 +179,7 @@ section
 	display: flex;
 	flex-direction: column;
 	text-align: left;
-	width: 15%;
+	width: 25%;
 	margin-bottom: 250px;
 	margin-top: 50px;
 	float: left;
@@ -189,7 +189,7 @@ section
 {
 	margin-bottom: 30px;
 	font-size: 30px;
-	margin-left: 80px;;
+	margin-left: 80px;
 }
 
 .boutonmenuprincipal {
@@ -223,9 +223,22 @@ section
     display: block;
 }
 
-#principal
+.principal
 {
 	float: right;
-	width: 60%;
-	margin-top: 200px;
+	width: 70%;
+	margin-top: 50px;
+	color: rgb(58, 58, 58)
+}
+
+.title
+{
+	margin-bottom: 30px;
+	font-size: 30px;
+	font-weight: bold;
+}
+
+.date
+{
+	font-weight: bold;
 }

@@ -266,11 +266,3 @@ footer div
 .dropdown:hover .dropdown-child {
     display: block;
 }
-
-#principal
-{
-	display: inline-block;
-	text-align: left;
-	width: 85%;
-	float:left;
-}

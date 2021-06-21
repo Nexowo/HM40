@@ -7,6 +7,32 @@
         <link rel="stylesheet" type="text/css" href="styles-uv.css">
             <link href="http://fonts.googleapis.com/css?family=Crete+Round" rel="stylesheet">
         <title>HM40</title>
+		<script type="text/javascript">
+		function switchDisplay(nouvelAffichage)
+		{
+			var newDisplay = document.getElementById(nouvelAffichage);
+			var tabDisplay = ['accueil', "notes", "devoirs"];
+			
+			for (let i=0; i<tabDisplay.length; i++)
+			{
+				document.getElementById(tabDisplay[i]).style.display = "none";
+			}
+			
+			newDisplay.style.display = "";
+			if (nouvelAffichage != 'accueil')
+			{
+				newDisplay.style.float = 'right';
+				if (nouvelAffichage == 'notes')
+				{
+					newDisplay.style.width = '50%';
+				}
+				else
+				{
+					newDisplay.style.width = '35%';
+				}
+			}
+		}
+		</script>
     </head>
 	
 	<body>
@@ -31,82 +57,87 @@
 		<section>
             <div id="id_page">
                 <div>
-					<h3>HM40</h3>
-            </div>
-            <div class="dropdown">
-             <button class="boutonmenuprincipal">Cours</button>
-                 <div class="dropdown-child">
-                     <a href="#">Prise en main de Qt</a>
-                     <a href="#">Loi Fitts</a>
-                     <a href="#">Keystroke</a>
-                 </div>
-            </div>
-            <div class="dropdown">
-             <button class="boutonmenuprincipal">TD</button>
-                 <div class="dropdown-child">
-                     <a href="#">Prise en main de Qt</a>
-                     <a href="#">Loi Fitts</a>
-                     <a href="#">Keystroke</a>
-                 </div>
-            </div>
-            <div class="dropdown">
-             <button class="boutonmenuprincipal">TP</button>
-                 <div class="dropdown-child">
-                     <a href="#">Prise en main de Qt</a>
-                     <a href="#">Loi Fitts</a>
-                     <a href="#">Keystroke</a>
-                 </div>
-            </div>
-            
-			<div class="dropdown">
-				<button class="boutonmenuprincipal">Devoirs</button>
-			</div>
-			
-			<div class="dropdown">
-				<button class="boutonmenuprincipal">Notes</button>
-			</div>
-			
-			<div class="dropdown">
-				<button class="boutonmenuprincipal">Annales</button>
-			</div>
-			
-			<div class="dropdown">
-				<button class="boutonmenuprincipal">Forum</button>
-			</div>
-            </div>
-            
-            <div id="principal">
-                <div id ="accueil">
-				<div class="title">HM40 Interface Homme Machine</div>
-				<div class="core">
-					Bienvenue dans cette UV intit&eacute;e HM40 dont le but est d'&eacute;tudier comment fonctionne une interface et comment l'adapter le mieux possible à l'utilisateur.
+					<a href="javascript:switchDisplay('accueil');"><h3>HM40</h3></a>
 				</div>
-			</div>
-			
-			<div id="notes">
-				<div class="title">Notes</div>
-				<div class="core">
-					<div id="menu_note">
-						<button class="boutton_note">Contrôle continu</button>
-						<button class="boutton_note">Projets</button>
-						<button class="boutton_note">Examens</button>
+				<div class="dropdown">
+				 <button class="boutonmenuprincipal">Cours</button>
+					 <div class="dropdown-child">
+						 <a href="#">Prise en main de Qt</a>
+						 <a href="#">Loi Fitts</a>
+						 <a href="#">Keystroke</a>
+					 </div>
+				</div>
+				<div class="dropdown">
+				 <button class="boutonmenuprincipal">TD</button>
+					 <div class="dropdown-child">
+						 <a href="#">Prise en main de Qt</a>
+						 <a href="#">Loi Fitts</a>
+						 <a href="#">Keystroke</a>
+					 </div>
+				</div>
+				<div class="dropdown">
+				 <button class="boutonmenuprincipal">TP</button>
+					 <div class="dropdown-child">
+						 <a href="#">Prise en main de Qt</a>
+						 <a href="#">Loi Fitts</a>
+						 <a href="#">Keystroke</a>
+					 </div>
+				</div>
+				
+				<div class="dropdown">
+					<a href="javascript:switchDisplay('devoirs');"><button class="boutonmenuprincipal">Devoirs</button></a>
+				</div>
+				
+				<div class="dropdown">
+					<a href="javascript:switchDisplay('notes');"><button class="boutonmenuprincipal">Notes</button></a>
+				</div>
+				
+				<div class="dropdown">
+					<button class="boutonmenuprincipal">Annales</button>
+				</div>
+				
+				<div class="dropdown">
+					<button class="boutonmenuprincipal">Forum</button>
+				</div>
+            </div>
+            
+            
+            <div id ="accueil">
+				<div class="principal">
+					<div class="title">HM40 Interface Homme Machine</div>
+					<div class="core">
+						Bienvenue dans cette UV intit&eacute;e HM40 dont le but est d'&eacute;tudier comment fonctionne une interface et comment l'adapter le mieux possible à l'utilisateur.
 					</div>
 				</div>
 			</div>
 			
-			<div id="devoirs">
-				<div class="title">Devoirs</div>
-				<div class="core">
-					<div id="menu_devoirs">
-						<div class="devoir">
-							<div class="date">05/12/2022 00:00</div><div class="intitulé">Rendu TP01 QT</div>
-							<div class="date">31/12/2022 00:00</div><div class="intitulé">Rendu Mini-Projet Fitts</div>
+			<div id="notes" style="display:none;">
+				<div class="principal">
+					<div class="title">Notes</div>
+					<div class="core">
+						<div id="menu_note">
+							<button class="boutton_note">Contrôle continu</button>
+							<button class="boutton_note">Projets</button>
+							<button class="boutton_note">Examens</button>
 						</div>
 					</div>
 				</div>
 			</div>
+			
+			<div id="devoirs" style="display:none;">
+				<div class="principal">
+					<div class="title">Devoirs</div>
+					<div class="core">
+						<div id="menu_devoirs">
+							<div class="devoir">
+								<div class="date">05/12/2022 00:00</div><div class="intitulé">Rendu TP01 QT</div>
+								<div class="date">31/12/2022 00:00</div><div class="intitulé">Rendu Mini-Projet Fitts</div>
+							</div>
+						</div>
+					</div>
+				</div>
             </div>
-		</section>	
+		</section>
 		
 		<footer>
 			<div class="wrapper">
