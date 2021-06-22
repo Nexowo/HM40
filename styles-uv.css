@@ -258,6 +258,11 @@ section
 	color: rgb(200,0,0);
 }
 
+.ar
+{
+	color: rgb(255,150,0);
+}
+
 .tabpart
 {
 	background-color: rgb(58, 58, 58);
@@ -276,6 +281,11 @@ th
 table
 {
 	border-collapse: collapse;
+}
+
+.calendar
+{
+	width: 250px;
 }
 /*
 #intitule th
