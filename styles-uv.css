@@ -258,7 +258,8 @@ section
 	color: rgb(200,0,0);
 }
 
-th
+.tabpart
 {
-	margin-right: 50px;
+	background-color: rgb(58, 58, 58);
+	color: rgb(220, 220, 220);
 }
