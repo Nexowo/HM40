@@ -263,3 +263,22 @@ section
 	background-color: rgb(58, 58, 58);
 	color: rgb(220, 220, 220);
 }
+
+th
+{
+	width: 400px;
+	height: 50px;/*
+	border: #444 solid 1px;
+	border-left: #444 solid 3px;
+	border-right: #444 solid 3px;*/
+}
+
+table
+{
+	border-collapse: collapse;
+}
+/*
+#intitule th
+{
+	border-top: #444 solid 3px;
+}*/
