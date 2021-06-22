@@ -176,10 +176,9 @@ section
 
 #id_page
 {
-	display: flex;
 	flex-direction: column;
 	text-align: left;
-	width: 25%;
+	width: 19%;
 	margin-bottom: 250px;
 	margin-top: 50px;
 	float: left;
@@ -226,7 +225,7 @@ section
 .principal
 {
 	float: right;
-	width: 70%;
+	width: 81%;
 	margin-top: 50px;
 	color: rgb(58, 58, 58)
 }
@@ -241,4 +240,25 @@ section
 .date
 {
 	font-weight: bold;
+}
+
+.core
+{
+	margin-top: 40px;
+	font-size: 20px;
+}
+
+.r
+{
+	color: rgb(0,200,0);
+}
+
+.nr
+{
+	color: rgb(200,0,0);
+}
+
+th
+{
+	margin-right: 50px;
 }
